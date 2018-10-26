@@ -1,0 +1,19 @@
+body {
+	background-color: #333;
+	color: #0A0;
+}
+h1, h2 {
+	text-align: center;
+}
+#stoneDecoration {
+	border-radius: 10px;
+	font-size: 1.5em;
+	text-align: center;
+	margin-top: 5px;
+}
+.tableDecoration {
+	border:3px solid #0C0;
+}
+.lineTable {
+	border: 1px solid #0F0;
+}

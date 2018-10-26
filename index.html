@@ -1,0 +1,34 @@
+<!--Dans le fichier html fourni, trier le tableau par ordre alphabétique du modèle.-->
+<!DOCTYPE html>
+<html lang="fr" ng-app="testApp">
+	<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/Ex7Ang.css"></li>
+	<title>Angular Partie 3 Exercice 7</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+	<script src="assets/js/Ex7Ang.js"></script>
+	</head>
+	<body>
+	<div class="container-fluid">
+		<h1>Angular Js</h1>
+		<h2>Partie 3 - Exercice 7</h2>
+		<div ng-controller="phonesCtrl" id="stoneDecoration" class="col-12">
+			<table cellspacing="2px" cellpadding="2px;" rules="all" class="tableDecoration col-12">
+				<thead>
+					<th class="lineTable">Modèle</th>
+					<th class="lineTable">Marque</th>
+				</thead>
+				<tr ng-repeat="phone in phones | orderBy : 'phoneModel'">
+					<td class="lineTable">
+						{{phone.phoneModel}}
+					</td>
+					<td class="lineTable">
+						{{phone.brand}}
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
